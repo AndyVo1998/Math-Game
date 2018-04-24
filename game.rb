@@ -3,8 +3,8 @@ require './player'
 
 class Game
   def initialize
-    @player1 = Player.new("Player 1")
-    @player2 = Player.new("Player 2")
+    @player1 = Player.new("P1")
+    @player2 = Player.new("P2")
     @current_player = @player1
     play
   end
