@@ -1,8 +1,12 @@
 class Player
-  attr_reader :lives, :turn
-  def initialize(t)
+  attr_reader :name
+  def initialize(name)
+    @name = name
     @lives = 3
-    @player_number = t
+  end
+
+  def alive?
+    @lives > 0
   end
 
   def lose_hp
@@ -10,6 +14,6 @@ class Player
   end
 
   def display_hp
-    puts "P#{@player_number} #{@lives}/3"
+    "#{@lives}/3"
   end
 end
